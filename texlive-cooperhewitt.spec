@@ -1,6 +1,6 @@
 Name:		texlive-cooperhewitt
 Version:	64967
-Release:	1
+Release:	2
 Summary:	LaTeX, pdfLaTeX, XeLaTeX and LuaLaTeX support for the Cooper Hewitt family of sans serif fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/cooperhewitt
