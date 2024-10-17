@@ -3,7 +3,7 @@ Version:	64967
 Release:	2
 Summary:	LaTeX, pdfLaTeX, XeLaTeX and LuaLaTeX support for the Cooper Hewitt family of sans serif fonts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/cooperhewitt
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/cooperhewitt
 License:	ofl lppl
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cooperhewitt.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cooperhewitt.doc.r%{version}.tar.xz
