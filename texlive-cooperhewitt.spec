@@ -12,7 +12,8 @@ Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/cooperhewitt.r%{
 Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/cooperhewitt.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
 BuildSystem:	texlive
-Provides:	texlive(%{tl_name}) = %{tl_revision}
+Requires:	texlive-tlpkg
+Provides:	texlive(%{tl_name}) = %{version}
 
 %description
 Cooper Hewitt is a contemporary sans serif, with characters composed of
@@ -21,3 +22,10 @@ Pentagram to evolve his Polaris Condensed typeface, Chester Jenkins
 created a new digital form to support the newly transformed Smithsonian
 Design Museum.
 
+
+%install -a
+mkdir -p %{buildroot}%{_texmf_updmap_d}
+cat > %{buildroot}%{_texmf_updmap_d}/%{tl_name} <<'TL_DROPIN_EOF'
+# from cooperhewitt:
+Map CooperHewitt.map
+TL_DROPIN_EOF
